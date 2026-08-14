@@ -1,0 +1,1712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaazhai — Tamil Nadu Banana Leaf Feast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;600;700&family=Catamaran:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --wood-dark: #20120a;
+        --wood-mid: #3a2113;
+        --wood-light: #54301b;
+        --leaf-dark: #173610;
+        --leaf-mid: #2f5b21;
+        --leaf-light: #568a3c;
+        --leaf-shine: rgba(255, 255, 255, 0.35);
+        --gold: #e0aa3e;
+        --gold-soft: #f3d896;
+        --rice: #fbf6e8;
+        --sambar-1: #e2892f;
+        --sambar-2: #9a4c14;
+        --rasam-1: #c34a24;
+        --rasam-2: #6c1f0e;
+        --vada: #c98a3a;
+        --vada-dark: #8a5420;
+        --cream: #f3e6c8;
+        --pickle-1: #c73a17;
+        --pickle-2: #7d1c08;
+        --ink: #241407;
+        --payasam-1: #f0d9a8;
+        --payasam-2: #c9a15a;
+        --curd: #fffdf6;
+        --paper: #efe0b8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: "Mukta", sans-serif;
+        background:
+          radial-gradient(
+            ellipse at 50% -10%,
+            rgba(255, 200, 120, 0.08),
+            transparent 60%
+          ),
+          repeating-linear-gradient(
+            90deg,
+            var(--wood-mid) 0 3px,
+            var(--wood-light) 3px 6px
+          ),
+          linear-gradient(180deg, var(--wood-dark), #150b05 95%);
+        background-blend-mode: normal;
+        color: var(--gold-soft);
+        padding: 48px 16px 80px;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at center,
+          transparent 40%,
+          rgba(0, 0, 0, 0.55) 100%
+        );
+        pointer-events: none;
+        z-index: 5;
+      }
+
+      .heading {
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto 6px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .heading .eyebrow {
+        margin: 0 0 4px;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #b9975f;
+        opacity: 0.8;
+      }
+
+      .heading h1 {
+        font-family: "Yatra One", cursive;
+        font-weight: 400;
+        font-size: clamp(28px, 6vw, 46px);
+        letter-spacing: 0.5px;
+        margin: 0 0 6px;
+        background: linear-gradient(
+          180deg,
+          var(--gold-soft),
+          var(--gold) 60%,
+          #b9832a
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+      }
+
+      .heading .tamil {
+        font-family: "Catamaran", "Mukta", sans-serif;
+        font-size: clamp(15px, 2.6vw, 19px);
+        color: #d8b876;
+        opacity: 0.9;
+        margin: 0 0 18px;
+        font-weight: 500;
+      }
+
+      .kolam {
+        width: min(320px, 70vw);
+        height: 16px;
+        margin: 0 auto 26px;
+        background-image:
+          radial-gradient(circle, var(--gold) 2.4px, transparent 2.6px),
+          radial-gradient(circle, var(--gold) 2.4px, transparent 2.6px);
+        background-size:
+          22px 22px,
+          22px 22px;
+        background-position:
+          0 0,
+          11px 11px;
+        opacity: 0.55;
+      }
+
+      .kolam.small {
+        width: min(180px, 40vw);
+        margin: 0 auto 8px;
+      }
+
+      .hint {
+        text-align: center;
+        font-size: 13px;
+        color: #c9a86c;
+        opacity: 0.75;
+        margin-top: 22px;
+        letter-spacing: 0.3px;
+      }
+
+      .scene {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+      }
+
+      /* ---------- LEAF ---------- */
+      .leaf {
+        position: relative;
+        width: min(92vw, 560px);
+        aspect-ratio: 0.54;
+        background:
+          radial-gradient(
+            120% 60% at 30% 8%,
+            var(--leaf-shine),
+            transparent 40%
+          ),
+          radial-gradient(
+            90% 50% at 70% 95%,
+            rgba(255, 255, 255, 0.12),
+            transparent 45%
+          ),
+          linear-gradient(
+            115deg,
+            var(--leaf-light) 0%,
+            var(--leaf-mid) 45%,
+            var(--leaf-dark) 100%
+          );
+        clip-path: polygon(
+          50% 0%,
+          63% 2.5%,
+          76% 8%,
+          87% 17%,
+          94% 28%,
+          98% 41%,
+          97% 54%,
+          92% 66%,
+          84% 77%,
+          73% 86%,
+          60% 93%,
+          52% 98%,
+          50% 100%,
+          47% 98%,
+          36% 93%,
+          24% 86%,
+          14% 77%,
+          7% 66%,
+          3% 54%,
+          4% 41%,
+          9% 28%,
+          18% 17%,
+          29% 8%,
+          40% 3%
+        );
+        box-shadow:
+          0 40px 70px rgba(0, 0, 0, 0.55),
+          inset 0 0 60px rgba(0, 0, 0, 0.25);
+        filter: saturate(1.05);
+      }
+
+      .vein-main {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        width: 3px;
+        height: 92%;
+        background: linear-gradient(
+          180deg,
+          transparent,
+          rgba(255, 255, 255, 0.28) 8%,
+          rgba(255, 255, 255, 0.18) 92%,
+          transparent
+        );
+        transform: translateX(-50%) rotate(1.2deg);
+        border-radius: 2px;
+        opacity: 0.8;
+      }
+
+      .side-vein {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 34%;
+        height: 1.4px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.22),
+          transparent
+        );
+        transform-origin: left center;
+        opacity: 0.5;
+      }
+
+      /* ---------- FOOD ITEMS (base) ---------- */
+      .food,
+      .bowl {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        transition:
+          filter 0.25s ease,
+          transform 0.25s ease;
+      }
+      .food:hover,
+      .bowl:hover {
+        filter: brightness(1.08);
+      }
+      .food.pulse,
+      .bowl.pulse {
+        animation: pulse 0.5s ease;
+      }
+      @keyframes pulse {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        40% {
+          transform: translate(-50%, -50%) scale(1.08);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      /* ---------- RICE ---------- */
+      .rice {
+        top: 45%;
+        left: 50%;
+        width: 40%;
+        height: 17%;
+        border-radius: 50% 50% 46% 46% / 62% 62% 38% 38%;
+        background:
+          radial-gradient(
+              circle at 3px 3px,
+              rgba(0, 0, 0, 0.05) 1px,
+              transparent 0
+            )
+            0 0/7px 7px,
+          radial-gradient(
+            ellipse at 35% 28%,
+            #ffffff,
+            var(--rice) 55%,
+            #e9dfc0 100%
+          );
+        box-shadow:
+          inset 0 -6px 10px rgba(120, 95, 40, 0.25),
+          inset 0 6px 12px rgba(255, 255, 255, 0.6),
+          0 10px 18px rgba(0, 0, 0, 0.35);
+      }
+      .ghee {
+        position: absolute;
+        top: 22%;
+        left: 52%;
+        width: 15%;
+        height: 22%;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 35% 30%,
+          #fff6cf,
+          #f3d357 55%,
+          #d9a916 100%
+        );
+        opacity: 0.9;
+        filter: blur(0.3px);
+      }
+
+      .sambar {
+        top: 22%;
+        left: 20%;
+        width: 20%;
+        height: 13%;
+        border-radius: 50%;
+        background: radial-gradient(
+          ellipse at 35% 30%,
+          var(--sambar-1),
+          var(--sambar-2) 80%
+        );
+        box-shadow:
+          inset 0 4px 8px rgba(255, 200, 120, 0.35),
+          inset 0 -5px 8px rgba(0, 0, 0, 0.3),
+          0 8px 14px rgba(0, 0, 0, 0.4);
+      }
+      .rasam {
+        top: 22%;
+        left: 80%;
+        width: 18%;
+        height: 12%;
+        border-radius: 50%;
+        background: radial-gradient(
+          ellipse at 35% 30%,
+          var(--rasam-1),
+          var(--rasam-2) 80%
+        );
+        box-shadow:
+          inset 0 4px 8px rgba(255, 150, 100, 0.3),
+          inset 0 -5px 8px rgba(0, 0, 0, 0.35),
+          0 8px 14px rgba(0, 0, 0, 0.4);
+      }
+      .payasam {
+        top: 8%;
+        left: 68%;
+        width: 16%;
+        height: 10%;
+        border-radius: 50%;
+        background: radial-gradient(
+          ellipse at 35% 30%,
+          var(--payasam-1),
+          var(--payasam-2) 85%
+        );
+        box-shadow:
+          inset 0 3px 6px rgba(255, 255, 255, 0.45),
+          inset 0 -4px 7px rgba(0, 0, 0, 0.25),
+          0 7px 12px rgba(0, 0, 0, 0.35);
+      }
+      .curd {
+        top: 63%;
+        left: 78%;
+        width: 15%;
+        height: 9%;
+        border-radius: 50%;
+        background: radial-gradient(
+          ellipse at 35% 25%,
+          var(--curd),
+          #ece3c8 85%
+        );
+        box-shadow:
+          inset 0 3px 6px rgba(255, 255, 255, 0.7),
+          inset 0 -4px 6px rgba(0, 0, 0, 0.15),
+          0 6px 10px rgba(0, 0, 0, 0.3);
+      }
+      .poriyal {
+        top: 63%;
+        left: 22%;
+        width: 17%;
+        height: 9%;
+        border-radius: 45% 55% 50% 50% / 55% 55% 45% 45%;
+        background: linear-gradient(120deg, #7fae42, #4f7d29 70%);
+        box-shadow:
+          inset 0 3px 5px rgba(255, 255, 255, 0.35),
+          0 6px 10px rgba(0, 0, 0, 0.3);
+      }
+      .kootu {
+        top: 8%;
+        left: 32%;
+        width: 16%;
+        height: 9%;
+        border-radius: 50%;
+        background: radial-gradient(
+          ellipse at 35% 30%,
+          #e8c85c,
+          #b98f2a 80%
+        );
+        box-shadow:
+          inset 0 3px 6px rgba(255, 255, 255, 0.4),
+          0 6px 10px rgba(0, 0, 0, 0.3);
+      }
+      .pickle {
+        top: 5%;
+        left: 50%;
+        width: 8%;
+        height: 5%;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 35% 30%,
+          var(--pickle-1),
+          var(--pickle-2) 85%
+        );
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+      }
+      .salt {
+        top: 5%;
+        left: 58%;
+        width: 5%;
+        height: 3%;
+        border-radius: 50%;
+        background: #f4f0e2;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      }
+      .papadam {
+        top: 78%;
+        left: 20%;
+        width: 22%;
+        height: 3%;
+        border-radius: 50%;
+        background: repeating-radial-gradient(
+          circle,
+          #d9a94e 0 3px,
+          #c8934a 3px 6px
+        );
+        transform: translate(-50%, -50%) rotate(-6deg);
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.35);
+      }
+      .vada {
+        top: 78%;
+        width: 12%;
+        height: 8%;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 35% 30%,
+          var(--vada),
+          var(--vada-dark) 85%
+        );
+        box-shadow:
+          inset 0 3px 5px rgba(255, 220, 150, 0.4),
+          0 6px 10px rgba(0, 0, 0, 0.35);
+      }
+      .vada::after {
+        content: "";
+        position: absolute;
+        top: 38%;
+        left: 34%;
+        width: 12%;
+        height: 8%;
+        border-radius: 50%;
+        background: #8a5420;
+      }
+      .v1 {
+        left: 62%;
+      }
+      .v2 {
+        left: 75%;
+      }
+
+      /* ---------- BANANA ---------- */
+      .banana {
+        top: 90%;
+        left: 50%;
+        width: 26%;
+        height: 6%;
+        border-radius: 40% 60% 60% 40% / 90% 90% 10% 10%;
+        background: linear-gradient(
+          100deg,
+          #f6e07a 0%,
+          #e7c945 55%,
+          #c9a72e 100%
+        );
+        box-shadow:
+          inset 0 3px 4px rgba(255, 255, 255, 0.5),
+          inset 0 -4px 6px rgba(0, 0, 0, 0.25),
+          0 6px 10px rgba(0, 0, 0, 0.4);
+        transform: translate(-50%, -50%) rotate(-3deg);
+      }
+      .banana::before,
+      .banana::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 10%;
+        height: 60%;
+        background: #6b5324;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+      .banana::before {
+        left: -2%;
+      }
+      .banana::after {
+        right: -2%;
+      }
+
+      /* ---------- STEAM ---------- */
+      .steam {
+        position: absolute;
+        bottom: 95%;
+        width: 10px;
+        height: 20px;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.85),
+          rgba(255, 255, 255, 0) 70%
+        );
+        filter: blur(3px);
+        border-radius: 50%;
+        opacity: 0;
+        animation: rise 3.4s ease-in infinite;
+        pointer-events: none;
+      }
+      .rice .steam {
+        bottom: 70%;
+      }
+      .payasam .steam {
+        bottom: 80%;
+      }
+      .s1 {
+        left: 30%;
+        animation-delay: 0s;
+      }
+      .s2 {
+        left: 55%;
+        animation-delay: 1.1s;
+      }
+      .s3 {
+        left: 45%;
+        animation-delay: 2.2s;
+      }
+
+      @keyframes rise {
+        0% {
+          opacity: 0;
+          transform: translateY(0) translateX(0) scale(0.6);
+        }
+        18% {
+          opacity: 0.75;
+        }
+        55% {
+          opacity: 0.45;
+          transform: translateY(-34px) translateX(5px) scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-72px) translateX(-6px) scale(1.4);
+        }
+      }
+
+      .particle {
+        position: absolute;
+        bottom: 90%;
+        width: 8px;
+        height: 16px;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.75),
+          rgba(255, 255, 255, 0) 70%
+        );
+        filter: blur(2.5px);
+        border-radius: 50%;
+        pointer-events: none;
+        animation: rise 2.8s ease-out forwards;
+      }
+
+      /* ---------- TOOLTIP ---------- */
+      .tooltip {
+        position: fixed;
+        z-index: 20;
+        pointer-events: none;
+        background: linear-gradient(180deg, #fdf3d8, #e9d19c);
+        color: #3a2410;
+        font-family: "Mukta", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 8px;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transform: translate(-50%, -130%) scale(0.9);
+        transition:
+          opacity 0.18s ease,
+          transform 0.18s ease;
+        white-space: nowrap;
+      }
+      .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        background: #e9d19c;
+        transform: translateX(-50%) rotate(45deg);
+      }
+      .tooltip.show {
+        opacity: 1;
+        transform: translate(-50%, -145%) scale(1);
+      }
+
+      /* =================================================================
+         SECTION SCAFFOLDING
+      ================================================================= */
+      main {
+        position: relative;
+        z-index: 2;
+        max-width: 1040px;
+        margin: 0 auto;
+      }
+
+      .section-head {
+        text-align: center;
+        margin: 0 auto 34px;
+        max-width: 560px;
+      }
+      .section-head .eyebrow {
+        margin: 0 0 6px;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #b9975f;
+        opacity: 0.8;
+      }
+      .section-head h2 {
+        font-family: "Yatra One", cursive;
+        font-weight: 400;
+        font-size: clamp(24px, 4.4vw, 34px);
+        margin: 0 0 8px;
+        color: var(--gold-soft);
+      }
+      .section-head .tamil-sm {
+        font-family: "Catamaran", "Mukta", sans-serif;
+        font-size: 15px;
+        color: #d8b876;
+        opacity: 0.85;
+        font-weight: 500;
+      }
+      .section-head p.desc {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #cbb488;
+        opacity: 0.85;
+        margin: 10px 0 0;
+      }
+
+      section.stage {
+        margin-top: 96px;
+      }
+
+      /* =================================================================
+         LEGACY — vintage "hotel" photo-plaque strip
+      ================================================================= */
+      .legacy-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 26px;
+      }
+
+      .plaque {
+        position: relative;
+        background: linear-gradient(160deg, #2a1810, #1a0f08 100%);
+        border-radius: 6px;
+        padding: 14px 14px 18px;
+        box-shadow:
+          0 18px 34px rgba(0, 0, 0, 0.55),
+          inset 0 0 0 1px rgba(224, 170, 62, 0.18);
+        transform: rotate(var(--ptilt, 0deg));
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .plaque:hover {
+        transform: rotate(0deg) translateY(-5px);
+        box-shadow:
+          0 26px 40px rgba(0, 0, 0, 0.6),
+          inset 0 0 0 1px rgba(224, 170, 62, 0.3);
+      }
+      .plaque:nth-child(1) { --ptilt: -1.2deg; }
+      .plaque:nth-child(2) { --ptilt: 0.9deg; }
+      .plaque:nth-child(3) { --ptilt: -0.7deg; }
+      .plaque:nth-child(4) { --ptilt: 1.3deg; }
+
+      /* corner pins */
+      .plaque::before,
+      .plaque::after {
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        top: 6px;
+        background: radial-gradient(circle at 35% 30%, var(--gold-soft), #8a5420 85%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+      }
+      .plaque::before { left: 6px; }
+      .plaque::after { right: 6px; }
+
+      .plaque-photo {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        border-radius: 3px;
+        overflow: hidden;
+        filter: sepia(0.35) saturate(1.1);
+        box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+      }
+      .plaque-photo::after {
+        /* vintage grain + vignette overlay */
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse at 50% 50%, transparent 45%, rgba(20, 10, 5, 0.65) 100%),
+          repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.025) 0 1px,
+            transparent 1px 3px
+          );
+        mix-blend-mode: multiply;
+      }
+
+      .plaque-caption {
+        text-align: center;
+        margin-top: 12px;
+      }
+      .plaque-caption .p-title {
+        font-family: "Yatra One", cursive;
+        font-size: 17px;
+        color: var(--gold-soft);
+        margin: 0 0 2px;
+      }
+      .plaque-caption .p-sub {
+        font-family: "Catamaran", "Mukta", sans-serif;
+        font-size: 11.5px;
+        letter-spacing: 0.6px;
+        color: #b9975f;
+        opacity: 0.85;
+        margin: 0;
+      }
+
+      /* --- illustrated scenes, drawn in CSS, one per plaque --- */
+      .scene-sign {
+        background: linear-gradient(180deg, #7a5a2e 0%, #4a3418 55%, #2c1e0e 100%);
+      }
+      .scene-sign .signboard {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        right: 10%;
+        height: 26%;
+        background: linear-gradient(160deg, #3a2a14, #1c1408);
+        border: 2px solid #d9ab52;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .scene-sign .signboard span {
+        font-family: "Yatra One", cursive;
+        color: #f0d9a0;
+        font-size: 15px;
+      }
+      .scene-sign .post {
+        position: absolute;
+        bottom: 0;
+        left: 47%;
+        width: 6%;
+        height: 30%;
+        background: linear-gradient(90deg, #241708, #4a3418);
+      }
+      .scene-sign .bulb {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #f6d98a;
+        box-shadow: 0 0 6px 2px rgba(246, 217, 138, 0.7);
+      }
+
+      .scene-hall {
+        background: linear-gradient(180deg, #4a3016 0%, #2c1c0c 60%, #1a1006 100%);
+      }
+      .scene-hall .pillar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 9%;
+        background: linear-gradient(90deg, #6b4a24, #2c1c0c);
+      }
+      .scene-hall .lamp {
+        position: absolute;
+        top: 8%;
+        width: 5%;
+        height: 16%;
+        border-radius: 50% 50% 20% 20%;
+        background: radial-gradient(circle at 35% 30%, #f6d98a, #b9862c 85%);
+        box-shadow: 0 0 14px 4px rgba(246, 217, 138, 0.35);
+      }
+      .scene-hall .table-row {
+        position: absolute;
+        bottom: 12%;
+        left: 8%;
+        right: 8%;
+        height: 8%;
+        background: linear-gradient(180deg, #8a5f2e, #4a3016);
+        border-radius: 2px;
+      }
+
+      .scene-brass {
+        background: radial-gradient(ellipse at 40% 35%, #6b4a1e, #241608 90%);
+      }
+      .scene-brass .vessel {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle at 35% 30%, #f3d896, #8a5a1e 80%);
+        box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.4), 0 6px 14px rgba(0, 0, 0, 0.5);
+      }
+      .scene-brass .v1 { width: 34%; height: 34%; top: 30%; left: 12%; }
+      .scene-brass .v2 { width: 24%; height: 24%; top: 50%; left: 50%; }
+      .scene-brass .v3 { width: 18%; height: 18%; top: 18%; left: 55%; }
+
+      .scene-leaf {
+        background: linear-gradient(150deg, #3a5424, #1c3010 80%);
+      }
+      .scene-leaf .rib {
+        position: absolute;
+        top: 6%;
+        bottom: 6%;
+        left: 50%;
+        width: 2px;
+        background: rgba(255, 255, 255, 0.25);
+      }
+      .scene-leaf .dab {
+        position: absolute;
+        border-radius: 50%;
+      }
+      .scene-leaf .d1 { width: 26%; height: 18%; top: 20%; left: 22%; background: radial-gradient(circle, var(--sambar-1), var(--sambar-2)); }
+      .scene-leaf .d2 { width: 30%; height: 20%; top: 55%; left: 55%; background: radial-gradient(circle, var(--rice), #e9dfc0); }
+      .scene-leaf .d3 { width: 18%; height: 13%; top: 15%; left: 60%; background: radial-gradient(circle, var(--rasam-1), var(--rasam-2)); }
+
+      @media (max-width: 720px) {
+        .legacy-row {
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 16px;
+        }
+      }
+
+      /* =================================================================
+         SPECIALS — hung menu-board cards
+      ================================================================= */
+      .specials-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 20px;
+      }
+
+      .special-card {
+        position: relative;
+        background: linear-gradient(160deg, var(--paper), #e2cf98 100%);
+        border-radius: 4px 4px 22px 22px / 4px 4px 34px 34px;
+        padding: 20px 18px 22px;
+        color: var(--ink);
+        box-shadow:
+          0 18px 30px rgba(0, 0, 0, 0.45),
+          inset 0 0 0 1px rgba(120, 85, 30, 0.25);
+        transform: rotate(var(--tilt, 0deg));
+        transition: transform 0.25s ease;
+      }
+      .special-card:hover {
+        transform: rotate(0deg) translateY(-4px);
+      }
+      .special-card:nth-child(1) {
+        --tilt: -1.4deg;
+      }
+      .special-card:nth-child(2) {
+        --tilt: 1deg;
+      }
+      .special-card:nth-child(3) {
+        --tilt: -0.8deg;
+      }
+      .special-card:nth-child(4) {
+        --tilt: 1.6deg;
+      }
+
+      .special-card::before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        left: 50%;
+        width: 16px;
+        height: 16px;
+        background: radial-gradient(circle at 35% 30%, #8a5420, #4a2b10);
+        border-radius: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .special-card .tag {
+        display: inline-block;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 3px 8px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+      }
+      .special-card .tag.veg {
+        background: #38641f;
+        color: #dff2c8;
+      }
+      .special-card .tag.nonveg {
+        background: #8a1f10;
+        color: #f6d9c8;
+      }
+
+      .special-swatch {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        margin-bottom: 12px;
+        box-shadow:
+          inset 0 4px 6px rgba(255, 255, 255, 0.45),
+          inset 0 -4px 7px rgba(0, 0, 0, 0.25),
+          0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .special-card h3 {
+        font-family: "Catamaran", sans-serif;
+        font-size: 17px;
+        font-weight: 800;
+        margin: 0 0 4px;
+        line-height: 1.25;
+      }
+      .special-card .tamil-name {
+        font-family: "Catamaran", sans-serif;
+        font-size: 12.5px;
+        color: #6b4b1f;
+        margin: 0 0 8px;
+      }
+      .special-card p.blurb {
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 0 0 14px;
+        color: #4a3417;
+        opacity: 0.9;
+      }
+      .special-card .price {
+        font-family: "Catamaran", sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        color: #6b2b10;
+      }
+      .special-card .price span {
+        font-size: 11px;
+        font-weight: 600;
+        opacity: 0.7;
+        margin-left: 3px;
+      }
+
+      /* =================================================================
+         ASSEMBLY — signature "meal being served" animation
+      ================================================================= */
+      .assembly-wrap {
+        display: grid;
+        grid-template-columns: minmax(220px, 320px) 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      @media (max-width: 720px) {
+        .assembly-wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .mini-leaf {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        aspect-ratio: 0.6;
+        background:
+          radial-gradient(
+            120% 60% at 30% 8%,
+            var(--leaf-shine),
+            transparent 40%
+          ),
+          linear-gradient(
+            115deg,
+            var(--leaf-light) 0%,
+            var(--leaf-mid) 45%,
+            var(--leaf-dark) 100%
+          );
+        clip-path: polygon(
+          50% 0%,
+          70% 4%,
+          88% 16%,
+          98% 34%,
+          98% 56%,
+          88% 76%,
+          68% 92%,
+          50% 100%,
+          32% 92%,
+          12% 76%,
+          2% 56%,
+          2% 34%,
+          12% 16%,
+          30% 4%
+        );
+        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
+      }
+
+      .step-item {
+        position: absolute;
+        transform: translate(-50%, -50%) scale(0.4);
+        opacity: 0;
+        border-radius: 50%;
+        transition: none;
+      }
+      .assembly-stage.play .step-item {
+        animation: dropIn 0.55s cubic-bezier(0.32, 1.3, 0.5, 1) forwards;
+        animation-delay: var(--d);
+      }
+      @keyframes dropIn {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -70%) scale(0.3);
+        }
+        70% {
+          opacity: 1;
+          transform: translate(-50%, -48%) scale(1.08);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      .si-rice {
+        top: 46%;
+        left: 50%;
+        width: 42%;
+        height: 18%;
+        border-radius: 50% 50% 46% 46% / 62% 62% 38% 38%;
+        background: radial-gradient(
+          ellipse at 35% 28%,
+          #ffffff,
+          var(--rice) 55%,
+          #e9dfc0 100%
+        );
+      }
+      .si-sambar {
+        top: 24%;
+        left: 20%;
+        width: 20%;
+        height: 13%;
+        background: radial-gradient(
+          ellipse at 35% 30%,
+          var(--sambar-1),
+          var(--sambar-2) 80%
+        );
+      }
+      .si-rasam {
+        top: 24%;
+        left: 80%;
+        width: 18%;
+        height: 12%;
+        background: radial-gradient(
+          ellipse at 35% 30%,
+          var(--rasam-1),
+          var(--rasam-2) 80%
+        );
+      }
+      .si-poriyal {
+        top: 66%;
+        left: 22%;
+        width: 17%;
+        height: 9%;
+        border-radius: 45% 55% 50% 50% / 55% 55% 45% 45%;
+        background: linear-gradient(120deg, #7fae42, #4f7d29 70%);
+      }
+      .si-vada {
+        top: 66%;
+        left: 78%;
+        width: 15%;
+        height: 10%;
+        background: radial-gradient(
+          circle at 35% 30%,
+          var(--vada),
+          var(--vada-dark) 85%
+        );
+      }
+      .si-papadam {
+        top: 82%;
+        left: 30%;
+        width: 22%;
+        height: 4%;
+        border-radius: 50%;
+        background: repeating-radial-gradient(
+          circle,
+          #d9a94e 0 3px,
+          #c8934a 3px 6px
+        );
+      }
+      .si-payasam {
+        top: 10%;
+        left: 66%;
+        width: 15%;
+        height: 9%;
+        background: radial-gradient(
+          ellipse at 35% 30%,
+          var(--payasam-1),
+          var(--payasam-2) 85%
+        );
+      }
+      .si-banana {
+        top: 92%;
+        left: 50%;
+        width: 24%;
+        height: 5%;
+        border-radius: 40% 60% 60% 40% / 90% 90% 10% 10%;
+        background: linear-gradient(100deg, #f6e07a 0%, #e7c945 55%, #c9a72e 100%);
+      }
+
+      .steps-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        counter-reset: step;
+      }
+      .steps-list li {
+        counter-increment: step;
+        display: flex;
+        gap: 14px;
+        align-items: baseline;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(224, 170, 62, 0.15);
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+      }
+      .steps-list li.active {
+        opacity: 1;
+      }
+      .steps-list li::before {
+        content: counter(step, decimal-leading-zero);
+        font-family: "Catamaran", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        color: var(--gold);
+        flex-shrink: 0;
+        width: 22px;
+      }
+      .steps-list .step-en {
+        font-weight: 600;
+        font-size: 14.5px;
+        color: var(--gold-soft);
+      }
+      .steps-list .step-ta {
+        display: block;
+        font-family: "Catamaran", sans-serif;
+        font-size: 12.5px;
+        color: #c9a86c;
+        opacity: 0.8;
+        margin-top: 2px;
+      }
+
+      .replay-btn {
+        margin-top: 20px;
+        font-family: "Mukta", sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        color: var(--ink);
+        background: linear-gradient(180deg, var(--gold-soft), var(--gold));
+        border: none;
+        padding: 9px 18px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+        transition: transform 0.15s ease;
+      }
+      .replay-btn:hover {
+        transform: translateY(-2px);
+      }
+      .replay-btn:active {
+        transform: translateY(0);
+      }
+
+      /* =================================================================
+         MENU
+      ================================================================= */
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px 40px;
+      }
+      .menu-group h3 {
+        font-family: "Catamaran", sans-serif;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin: 0 0 4px;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+      }
+      .menu-group h3 .tamil-sm {
+        font-family: "Catamaran", sans-serif;
+        font-size: 12px;
+        text-transform: none;
+        letter-spacing: 0;
+        color: #b9975f;
+        opacity: 0.8;
+      }
+      .menu-group ul {
+        list-style: none;
+        margin: 10px 0 0;
+        padding: 0;
+      }
+      .menu-group li {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        padding: 7px 0;
+        font-size: 14.5px;
+      }
+      .menu-group .veg-dot {
+        width: 9px;
+        height: 9px;
+        border: 1.5px solid #4f9c2c;
+        border-radius: 2px;
+        flex-shrink: 0;
+        position: relative;
+      }
+      .menu-group .veg-dot::after {
+        content: "";
+        position: absolute;
+        inset: 1.5px;
+        border-radius: 50%;
+        background: #4f9c2c;
+      }
+      .menu-group .veg-dot.nonveg {
+        border-color: #b8422a;
+      }
+      .menu-group .veg-dot.nonveg::after {
+        background: #b8422a;
+      }
+      .menu-group .item-name {
+        color: var(--gold-soft);
+        font-weight: 500;
+      }
+      .menu-group .leader {
+        flex: 1;
+        border-bottom: 1px dotted rgba(224, 170, 62, 0.35);
+        transform: translateY(-3px);
+      }
+      .menu-group .item-price {
+        font-family: "Catamaran", sans-serif;
+        font-weight: 700;
+        color: var(--gold);
+        font-size: 13.5px;
+      }
+
+      /* =================================================================
+         FOOTER
+      ================================================================= */
+      footer {
+        text-align: center;
+        margin-top: 80px;
+        position: relative;
+        z-index: 2;
+      }
+      footer .foot-kolam {
+        width: min(220px, 50vw);
+        height: 14px;
+        margin: 0 auto 22px;
+        background-image: radial-gradient(
+          circle,
+          var(--gold) 2px,
+          transparent 2.2px
+        );
+        background-size: 18px 18px;
+        opacity: 0.4;
+      }
+      footer .foot-name {
+        font-family: "Yatra One", cursive;
+        font-size: 20px;
+        color: var(--gold-soft);
+        margin: 0 0 10px;
+      }
+      footer .foot-meta {
+        font-size: 12.5px;
+        color: #a98a55;
+        opacity: 0.8;
+        line-height: 1.9;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .steam,
+        .particle {
+          animation: none;
+          opacity: 0;
+        }
+        .food,
+        .bowl {
+          transition: none;
+        }
+        .pulse {
+          animation: none;
+        }
+        .assembly-stage.play .step-item {
+          animation: none;
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        .special-card {
+          transform: none;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .leaf {
+          width: 94vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <p class="eyebrow">Welcome to</p>
+      <h1>Vaazhai</h1>
+      <p class="tamil">வாழை · authentic Tamil Nadu banana‑leaf meals</p>
+    </div>
+    <div class="kolam"></div>
+
+    <div class="scene">
+      <div class="leaf" id="leaf">
+        <div class="vein-main"></div>
+
+        <div class="bowl payasam" data-name="பாயசம் · Payasam">
+          <div class="steam s2"></div>
+        </div>
+        <div class="food pickle" data-name="ஊறுகாய் · Pickle (Avakkai)"></div>
+        <div class="food salt" data-name="உப்பு · Salt"></div>
+
+        <div class="food poriyal" data-name="பொரியல் · Poriyal"></div>
+        <div class="food kootu" data-name="கூட்டு · Kootu"></div>
+
+        <div class="food rice" data-name="சோறு · Rice with Ghee">
+          <div class="ghee"></div>
+          <div class="steam s1"></div>
+          <div class="steam s2"></div>
+          <div class="steam s3"></div>
+        </div>
+        <div class="food sambar" data-name="சாம்பார் · Sambar">
+          <div class="steam s1"></div>
+        </div>
+
+        <div class="food curd" data-name="தயிர் · Curd"></div>
+        <div class="food rasam" data-name="ரசம் · Rasam">
+          <div class="steam s2"></div>
+        </div>
+
+        <div class="food papadam" data-name="அப்பளம் · Papadam"></div>
+        <div class="food vada v1" data-name="வடை · Medu Vada"></div>
+        <div class="food vada v2" data-name="வடை · Medu Vada"></div>
+
+        <div class="food banana" data-name="வாழைப்பழம் · Banana"></div>
+      </div>
+    </div>
+
+    <p class="hint">tap any dish to see its name</p>
+
+    <main>
+      <!-- ============ LEGACY / AMBIENCE ============ -->
+      <section class="stage" id="legacy" style="margin-top: 64px;">
+        <div class="section-head">
+          <p class="eyebrow">Since 1962 ·</p>
+          <h2>The Hotel</h2>
+          <p class="tamil-sm">எங்கள் பாரம்பரியம்</p>
+          <p class="desc">Three generations behind the same wood-fired stoves. A family-run "hotel" in the old Tamil sense of the word — a dining hall, not a place to sleep.</p>
+        </div>
+
+        <div class="legacy-row">
+          <div class="plaque">
+            <div class="plaque-photo scene-sign">
+              <div class="signboard"><span>Vaazhai</span></div>
+              <div class="post"></div>
+              <div class="bulb" style="top:32%; left:12%;"></div>
+              <div class="bulb" style="top:32%; left:88%;"></div>
+            </div>
+            <div class="plaque-caption">
+              <p class="p-title">The Signboard</p>
+              <p class="p-sub">HAND-PAINTED · MOUNT ROAD, 1962</p>
+            </div>
+          </div>
+
+          <div class="plaque">
+            <div class="plaque-photo scene-hall">
+              <div class="pillar" style="left:6%;"></div>
+              <div class="pillar" style="right:6%;"></div>
+              <div class="lamp" style="left:20%;"></div>
+              <div class="lamp" style="left:75%;"></div>
+              <div class="table-row"></div>
+            </div>
+            <div class="plaque-caption">
+              <p class="p-title">The Dining Hall</p>
+              <p class="p-sub">TEAK PILLARS · SEATS 80</p>
+            </div>
+          </div>
+
+          <div class="plaque">
+            <div class="plaque-photo scene-brass">
+              <div class="vessel v1"></div>
+              <div class="vessel v2"></div>
+              <div class="vessel v3"></div>
+            </div>
+            <div class="plaque-caption">
+              <p class="p-title">Brass & Fire</p>
+              <p class="p-sub">SAME VESSELS, THREE GENERATIONS</p>
+            </div>
+          </div>
+
+          <div class="plaque">
+            <div class="plaque-photo scene-leaf">
+              <div class="rib"></div>
+              <div class="dab d1"></div>
+              <div class="dab d2"></div>
+              <div class="dab d3"></div>
+            </div>
+            <div class="plaque-caption">
+              <p class="p-title">Leaf, Not Plate</p>
+              <p class="p-sub">FRESH-CUT, EVERY SERVICE</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SPECIALS ============ -->
+      <section class="stage" id="specials">
+        <div class="section-head">
+          <p class="eyebrow">Today's</p>
+          <h2>Specials</h2>
+          <p class="tamil-sm">இன்றைய சிறப்பு உணவு</p>
+        </div>
+        <div class="specials-row">
+          <article class="special-card">
+            <span class="tag nonveg">Sunday only</span>
+            <div class="special-swatch" style="background: radial-gradient(ellipse at 35% 30%, #b2591f, #5e2a0c 85%)"></div>
+            <h3>Chettinad Mutton Curry</h3>
+            <p class="tamil-name">செட்டிநாடு மட்டன் குழம்பு</p>
+            <p class="blurb">Slow-cooked with roasted stone-ground masala, curry leaf and coconut oil. Served alongside your leaf, not on it.</p>
+            <p class="price">₹220 <span>/ add-on</span></p>
+          </article>
+          <article class="special-card">
+            <span class="tag veg">Chef's pick</span>
+            <div class="special-swatch" style="background: radial-gradient(ellipse at 35% 30%, #e2892f, #7a3d10 85%)"></div>
+            <h3>Poricha Kuzhambu</h3>
+            <p class="tamil-name">பொரிச்ச குழம்பு</p>
+            <p class="blurb">Ash gourd and moong dal simmered in a mellow coconut-cumin base — the gentler cousin of sambar.</p>
+            <p class="price">₹60 <span>/ bowl</span></p>
+          </article>
+          <article class="special-card">
+            <span class="tag veg">Limited</span>
+            <div class="special-swatch" style="background: radial-gradient(circle at 35% 30%, #d9a94e, #7a5320 85%)"></div>
+            <h3>Elai Vadai</h3>
+            <p class="tamil-name">இலை வடை</p>
+            <p class="blurb">Urad dal vadai steamed inside a folded banana leaf, so it carries the leaf's aroma all the way through.</p>
+            <p class="price">₹45 <span>/ pair</span></p>
+          </article>
+          <article class="special-card">
+            <span class="tag veg">Dessert</span>
+            <div class="special-swatch" style="background: radial-gradient(ellipse at 35% 30%, #f0d9a8, #a9793a 85%)"></div>
+            <h3>Paal Payasam Deluxe</h3>
+            <p class="tamil-name">பால் பாயசம்</p>
+            <p class="blurb">Reduced for six hours over slow fire, finished with cashew, raisin and a thread of saffron.</p>
+            <p class="price">₹70 <span>/ bowl</span></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ ASSEMBLY ============ -->
+      <section class="stage" id="assembly">
+        <div class="section-head">
+          <p class="eyebrow">How it's</p>
+          <h2>Served</h2>
+          <p class="tamil-sm">எப்படி பரிமாறப்படுகிறது</p>
+          <p class="desc">A proper banana-leaf meal arrives in order, not all at once. Scroll here to watch it, or tap replay.</p>
+        </div>
+
+        <div class="assembly-wrap assembly-stage">
+          <div class="mini-leaf" id="miniLeaf">
+            <div class="step-item si-payasam" style="--d:0s"></div>
+            <div class="step-item si-sambar" style="--d:.35s"></div>
+            <div class="step-item si-rasam" style="--d:.6s"></div>
+            <div class="step-item si-rice" style="--d:.9s"></div>
+            <div class="step-item si-poriyal" style="--d:1.3s"></div>
+            <div class="step-item si-vada" style="--d:1.55s"></div>
+            <div class="step-item si-papadam" style="--d:1.8s"></div>
+            <div class="step-item si-banana" style="--d:2.05s"></div>
+          </div>
+
+          <div>
+            <ol class="steps-list" id="stepsList">
+              <li data-t="0"><div><span class="step-en">Payasam is set first, top corner</span><span class="step-ta">பாயசம் முதலில் வைக்கப்படும்</span></div></li>
+              <li data-t="350"><div><span class="step-en">Sambar ladled on the left</span><span class="step-ta">சாம்பார் இடதுபுறம்</span></div></li>
+              <li data-t="600"><div><span class="step-en">Rasam poured on the right</span><span class="step-ta">ரசம் வலதுபுறம்</span></div></li>
+              <li data-t="900"><div><span class="step-en">Hot rice, ghee to follow</span><span class="step-ta">சூடான சோறு, நெய் பின்னர்</span></div></li>
+              <li data-t="1300"><div><span class="step-en">Poriyal takes its corner</span><span class="step-ta">பொரியல் அதன் இடத்தில்</span></div></li>
+              <li data-t="1550"><div><span class="step-en">Vada goes in beside it</span><span class="step-ta">வடை அருகில் வைக்கப்படும்</span></div></li>
+              <li data-t="1800"><div><span class="step-en">Papadam, snapped fresh</span><span class="step-ta">அப்பளம் புதிதாக</span></div></li>
+              <li data-t="2050"><div><span class="step-en">Banana closes the meal</span><span class="step-ta">வாழைப்பழத்துடன் முடிவு</span></div></li>
+            </ol>
+            <button class="replay-btn" id="replayBtn">Replay ↺</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MENU ============ -->
+      <section class="stage" id="menu">
+        <div class="section-head">
+          <p class="eyebrow">Full</p>
+          <h2>Menu</h2>
+          <p class="tamil-sm">உணவு பட்டியல்</p>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-group">
+            <h3>Sides <span class="tamil-sm">துணை உணவுகள்</span></h3>
+            <ul>
+              <li><span class="veg-dot"></span><span class="item-name">Poriyal</span><span class="leader"></span><span class="item-price">₹30</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Kootu</span><span class="leader"></span><span class="item-price">₹30</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Kosumalli</span><span class="leader"></span><span class="item-price">₹25</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Avakkai Pickle</span><span class="leader"></span><span class="item-price">₹15</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h3>Gravies <span class="tamil-sm">குழம்புகள்</span></h3>
+            <ul>
+              <li><span class="veg-dot"></span><span class="item-name">Sambar</span><span class="leader"></span><span class="item-price">₹40</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Rasam</span><span class="leader"></span><span class="item-price">₹35</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Poricha Kuzhambu</span><span class="leader"></span><span class="item-price">₹60</span></li>
+              <li><span class="veg-dot nonveg"></span><span class="item-name">Chettinad Mutton (Sun)</span><span class="leader"></span><span class="item-price">₹220</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h3>Extras <span class="tamil-sm">சிற்றுண்டி</span></h3>
+            <ul>
+              <li><span class="veg-dot"></span><span class="item-name">Medu Vada (pair)</span><span class="leader"></span><span class="item-price">₹40</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Papadam</span><span class="leader"></span><span class="item-price">₹15</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Curd</span><span class="leader"></span><span class="item-price">₹20</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Elai Vadai (pair)</span><span class="leader"></span><span class="item-price">₹45</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h3>Sweets <span class="tamil-sm">இனிப்பு</span></h3>
+            <ul>
+              <li><span class="veg-dot"></span><span class="item-name">Paal Payasam</span><span class="leader"></span><span class="item-price">₹50</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Paal Payasam Deluxe</span><span class="leader"></span><span class="item-price">₹70</span></li>
+              <li><span class="veg-dot"></span><span class="item-name">Adhirasam</span><span class="leader"></span><span class="item-price">₹35</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot-kolam"></div>
+      <p class="foot-name">Vaazhai</p>
+      <p class="foot-meta">
+        Unlimited meals, served the traditional way<br />
+        Open daily · 11:30 am – 3:30 pm &amp; 7:00 pm – 10:30 pm<br />
+        Chennai, Tamil Nadu
+      </p>
+    </footer>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+      // 1) Grow a few asymmetric side-veins off the main rib, procedurally.
+      const leaf = document.getElementById("leaf");
+      const veinCount = 9;
+      for (let i = 0; i < veinCount; i++) {
+        const top = 8 + (i / (veinCount - 1)) * 80; // spread down the leaf
+        const side = i % 2 === 0 ? 1 : -1;
+        const v = document.createElement("div");
+        v.className = "side-vein";
+        v.style.top = top + "%";
+        v.style.transform = `rotate(${side * (18 + Math.random() * 10)}deg)`;
+        if (side < 0) {
+          v.style.left = "auto";
+          v.style.right = "50%";
+          v.style.transformOrigin = "right center";
+        }
+        v.style.opacity = 0.35 + Math.random() * 0.25;
+        leaf.insertBefore(v, leaf.firstChild.nextSibling);
+      }
+
+      // 2) Click a dish -> show its name in a floating tooltip + little pulse.
+      const tooltip = document.getElementById("tooltip");
+      document.querySelectorAll(".food, .bowl").forEach((el) => {
+        el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          tooltip.textContent = el.dataset.name || "";
+          const rect = el.getBoundingClientRect();
+          tooltip.style.left = rect.left + rect.width / 2 + "px";
+          tooltip.style.top = rect.top + "px";
+          tooltip.classList.add("show");
+
+          el.classList.remove("pulse");
+          void el.offsetWidth; // restart animation
+          el.classList.add("pulse");
+
+          clearTimeout(window.__ttTimer);
+          window.__ttTimer = setTimeout(
+            () => tooltip.classList.remove("show"),
+            1800,
+          );
+        });
+      });
+      document.addEventListener("click", () =>
+        tooltip.classList.remove("show"),
+      );
+
+      // 3) Occasionally puff extra steam from the hot dishes for a livelier scene.
+      const hotSpots = [".rice", ".sambar", ".rasam", ".payasam"];
+      function puff() {
+        const reduce = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        if (!reduce) {
+          const spot = document.querySelector(
+            hotSpots[Math.floor(Math.random() * hotSpots.length)],
+          );
+          if (spot) {
+            const p = document.createElement("div");
+            p.className = "particle";
+            p.style.left = 20 + Math.random() * 60 + "%";
+            p.style.animationDuration = 2.2 + Math.random() * 1.4 + "s";
+            spot.appendChild(p);
+            p.addEventListener("animationend", () => p.remove());
+          }
+        }
+        setTimeout(puff, 700 + Math.random() * 900);
+      }
+      puff();
+
+      // 4) Assembly sequence: scroll-triggered once, replayable, with a
+      //    step list that highlights in sync with the leaf filling up.
+      const stage = document.getElementById("assembly");
+      const stageBox = document.getElementById("miniLeaf").parentElement;
+      const stepsList = document.getElementById("stepsList");
+      const stepItems = stepsList.querySelectorAll("li");
+      let assemblyTimers = [];
+
+      function playAssembly() {
+        assemblyTimers.forEach((t) => clearTimeout(t));
+        assemblyTimers = [];
+        stageBox.classList.remove("play");
+        stepItems.forEach((li) => li.classList.remove("active"));
+        void stageBox.offsetWidth; // restart CSS animations
+        stageBox.classList.add("play");
+
+        stepItems.forEach((li) => {
+          const t = parseInt(li.dataset.t, 10);
+          assemblyTimers.push(
+            setTimeout(() => {
+              stepItems.forEach((x) => x.classList.remove("active"));
+              li.classList.add("active");
+            }, t),
+          );
+        });
+      }
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              playAssembly();
+              io.disconnect();
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      io.observe(stage);
+
+      document.getElementById("replayBtn").addEventListener("click", playAssembly);
+    </script>
+  </body>
+</html>
